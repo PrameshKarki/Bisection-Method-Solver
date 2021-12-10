@@ -86,7 +86,7 @@ class _ResultState extends State<Result> {
                           ], rows: [
                             DataRow(cells: [
                               DataCell(Center(child: Text("f(x)"))),
-                              DataCell(Center(child: Text(fa.toString()))),
+                              DataCell(Center(child: Text(fa.toStringAsFixed(4)))),
                               DataCell(
                                   Center(child: Text(fb.toStringAsFixed(4)))),
                             ])
@@ -114,7 +114,7 @@ class _ResultState extends State<Result> {
                             ))
                           ], rows: [
                             DataRow(cells: [
-                              DataCell(Center(child: Text("f(a)=$fa"))),
+                              DataCell(Center(child: Text("f(a)=${fa.toStringAsFixed(4)}"))),
                               DataCell(Center(
                                   child:
                                       Text("f(b)=${fb.toStringAsFixed(4)}"))),
